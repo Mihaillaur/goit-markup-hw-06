@@ -519,8 +519,7 @@ body {
 .media-icon {
   fill: currentColor;
 }
-.footer-right {
-}
+/* ==========FOOTER_FORM========== */
 .subscribe {
   font-style: normal;
   font-weight: 500;
@@ -530,23 +529,65 @@ body {
   color: var(--primary-light-color);
   margin-bottom: 16px;
 }
-.footer-email-input{
-  border: 1px solid var(--primary-light-color);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+.subscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
-.footer-email-input::placeholder{
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 2;
-/* display: flex; */
-/* align-items: center; */
-letter-spacing: 0.04em;
-color:var(--primary-light-color);
+.footer-email-input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  width: 264px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  color: var(--primary-light-color);
+  /* outline: transparent; */
+  border: 1px solid var(--primary-light-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
   background-color: var(--primary-color);
 }
 
+.footer-email-input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-light-color);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 8px 24px;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
+  height: 40px;
+  background-color: var(--btn-color-normal);
+  color: var(--primary-light-color);
+  border-radius: 4px;
+  border: 0;
+  fill: currentColor;
+  transition: background-color var(--transition-dur-and-func);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: var(--footer-hover-color);
+}
 /* ==========Фильтр Портфолио========== */
 
 .our-services {
@@ -716,10 +757,7 @@ color:var(--primary-light-color);
   border: 0;
   color: #ffffff;
 }
-/* .modal-close-btn:hover .modal-close-btn-icon, */
-/* .modal-close-btn:hover .modal-close-btn-icon { */
-/* fill: currentColor; */
-/* } */
+
 .modal-close-btn-icon {
   fill: currentColor;
   transition: fill var(--transition-dur-and-func);
@@ -803,15 +841,15 @@ color:var(--primary-light-color);
   outline: none;
   border-color: var(--btn-color-normal);
 }
-.modal-form-check-descr{
+.modal-form-check-descr {
   display: flex;
   align-items: center;
   font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
 }
 .modal-form-check-descr::before {
   content: "";
@@ -834,10 +872,10 @@ margin-bottom: 24px;
   background-position: center;
   fill: var(--secondary-bcg-color);
 }
-.modal-form-check:focus + .modal-form-check-descr::before{
+.modal-form-check:focus + .modal-form-check-descr::before {
   outline: 1px solid var(--hover-color);
 }
-.modal-form-submit{
+.modal-form-submit {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
